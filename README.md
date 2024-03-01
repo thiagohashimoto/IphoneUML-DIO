@@ -1,33 +1,33 @@
 # IphoneUML-DIO
 UML diagram for a challenge on DIO platform
+```mermaid
+classDiagram
+    class IPhone {
+        + ReproducaoMusical reproducaoMusical
+        + FuncionamentoTelefonico funcionamentoTelefonico
+        + NavegadorInternet navegadorInternet
+    }
 
-@startuml
-class IPhone {
-    + ReproducaoMusical reproducaoMusical
-    + FuncionamentoTelefonico funcionamentoTelefonico
-    + NavegadorInternet navegadorInternet
-}
+    class ReproducaoMusical {
+        + tocar()
+        + pausar()
+        + selecionarMusica()
+    }
 
-class ReproducaoMusical {
-    + tocar()
-    + pausar()
-    + selecionarMusica()
-}
+    class FuncionamentoTelefonico {
+        + ligar()
+        + atender()
+        + iniciarChamada()
+        + correioDeVoz()
+    }
 
-class FuncionamentoTelefonico {
-    + ligar()
-    + atender()
-    + iniciarChamada()
-    + correioDeVoz()
-}
+    class NavegadorInternet {
+        + exibirPagina()
+        + adicionarNovaAba()
+        + atualizarPagina()
+    }
 
-class NavegadorInternet {
-    + exibirPagina()
-    + adicionarNovaAba()
-    + atualizarPagina()
-}
-
-IPhone *-- ReproducaoMusical
-IPhone *-- FuncionamentoTelefonico
-IPhone *-- NavegadorInternet
-@enduml
+    IPhone *-- ReproducaoMusical
+    IPhone *-- FuncionamentoTelefonico
+    IPhone *-- NavegadorInternet
+```
